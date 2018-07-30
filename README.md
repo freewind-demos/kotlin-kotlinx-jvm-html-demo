@@ -1,4 +1,14 @@
-Kotlin Hello World Demo
-=======================
+Kotlin KotlinX Generate HTML on JVM Demo
+========================================
 
-Hello world from kotlin. Open it in IDE and run `Hello.kt`
+How to use [kotlinx](https://github.com/Kotlin/kotlinx.html) to generate HTML string with DSL on JVM.
+
+Run `Hello.kt` in your IDE, it will generate:
+
+```
+<html>
+  <body>
+    <div>Hello</div>
+  </body>
+</html>
+```

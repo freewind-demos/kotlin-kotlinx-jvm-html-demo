@@ -1,7 +1,17 @@
 package example
 
-fun main(args: Array<String>) {
-    println(hello("Kotlin"))
-}
+import kotlinx.html.*
+import kotlinx.html.stream.appendHTML
+import java.io.StringWriter
 
-fun hello(name: String): String = "Hello, $name!"
+fun main(args: Array<String>) {
+    val page = StringWriter()
+    page.appendHTML().html {
+        body {
+            div {
+                +"Hello"
+            }
+        }
+    }
+    println(page.toString())
+}
